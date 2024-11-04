@@ -1,0 +1,11 @@
+﻿@model List<User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="card col-md-12">
+    @foreach (var item in Model)
+    {
+        <p class=text-center>@item.Name - @item.Age</p>
+    }
+</div>
